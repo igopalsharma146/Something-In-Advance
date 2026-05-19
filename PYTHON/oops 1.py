@@ -8,4 +8,3 @@ class car:
         print(f"Car Name: {self.name}, Model: {self.model}")
 car1 = car("Toyota", "Camry")
 car1.display_info()
-    
