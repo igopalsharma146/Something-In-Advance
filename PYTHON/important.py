@@ -1,0 +1,2 @@
+# agar python itni slow h to aiml me kyu use kr rhe h
+# python is slow but it is easy to learn and use, and it has a large community and a lot of libraries for machine learning and artificial intelligence. It is also a good language for prototyping and experimentation. However, for production use, it may not be the best choice due to its performance limitations.
