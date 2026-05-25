@@ -75,3 +75,12 @@ print("x * y:", x * y)
 
 print("x / y:", x / y)
 # jab hum x / y karte hain to wo x ke __truediv__ method ko call karta hai aur y ko as an argument pass karta hai. isliye humne __truediv__ method ko define kiya hai taki jab hum Fraction object ko divide kare to wo numerator/denominator format me return ho.
+
+
+
+#agar hame ese or bhi method define karne h to hum easily kar sakte hain, jaise ki __eq__ method ko define karne se hum Fraction object ko compare kar sakte hain, ya __lt__ method ko define karne se hum Fraction object ko less than operator ke sath compare kar sakte hain. is tarah se hum apne class me jitne bhi method chahte hain define kar sakte hain, aur unhe use kar sakte hain.
+#agar hame ye sab method dekhne h to hum dir() function ka use kar sakte hain, jo ki ek object ke sabhi attributes aur methods ko list me return karta hai. is tarah se hum apne class ke sabhi method ko dekh sakte hain, aur unhe use kar sakte hain.
+
+print(dir(x))
+
+# inhe ham magic methods kehte hain, kyunki ye methods python ke built-in methods hote hain, aur inhe hum apne class me define kar sakte hain taki jab hum apne class ke object ke sath kisi operator ka use kare to wo automatically call ho jaye. is tarah se hum apne class ke object ke sath operator overloading kar sakte hain, aur apne class ke object ke sath kisi bhi operator ka use kar sakte hain.
