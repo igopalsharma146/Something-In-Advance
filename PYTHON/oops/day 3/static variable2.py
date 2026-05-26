@@ -1,24 +1,22 @@
-#static method
+#static variable with private access
 class Employee:
-    counter =0
+    __counter = 0  # private static variable
+
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
-        Employee.counter += 1
+        Employee.__counter += 1  # incrementing the private static variable
+
     @staticmethod
     def display_count():
-        #jab ham static method banate hain to usme self ka use nahi karte hain kyunki static method class level method hota hai, aur usme instance variable ka use nahi kar sakte hain. Static method me hum class variable ka use kar sakte hain, isliye hum Employee.counter ka use kar rahe hain.
-        print(f"Total Employees: {Employee.counter}")
-    
+        print(f"Total Employees: {Employee.__counter}")  # accessing the private static variable
     @staticmethod
     def get_counter():
-        return Employee.counter
-    
+        return Employee.__counter  # accessing the private static variable
     @staticmethod
     def set_counter(value):
         if (type(value) == int) and (value >= 0):
-            Employee.counter = value
-    
+            Employee.__counter = value  # modifying the private static variable
 emp1 = Employee("Alice", 50000)
 emp2 = Employee("Bob", 60000)
 emp3 = Employee("Charlie", 55000)
