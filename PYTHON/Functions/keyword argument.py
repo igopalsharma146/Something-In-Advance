@@ -15,3 +15,13 @@ def greet(name, message="Hello", *args, **kwargs):
     extra_info = ", ".join(args) if args else ""
     extra_kwargs = ", ".join(f"{k}={v}" for k, v in kwargs.items()) if kwargs else ""
     return f"{message}, {name}! {extra_info} {extra_kwargs}"
+print(
+    greet(
+        "Gopal",
+        "Hi",
+        "AI Student",
+        "Intern",
+        age=20,
+        city="Jaipur"
+    )
+)
