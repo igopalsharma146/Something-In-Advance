@@ -3,6 +3,9 @@
 # Lower Bound
 # Definition:First index jahan value >= target ho
 
+# Upper Bound
+# Definition:First index jahan value > target ho
+
 def lower_bound(arr, target):
     left = 0
     right = len(arr) - 1
