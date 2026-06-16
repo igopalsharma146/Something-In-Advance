@@ -1,7 +1,7 @@
 # Program: 3 Sum
 
-arr = list(map(int, input("Enter array elements separated by space: ").split()))
-
+# arr = list(map(int, input("Enter array elements separated by space: ").split()))
+arr = [1,2,0,-1,2,-2,3,1,-4,0,-1]
 
 # Brute Force Approach
 result = set()
