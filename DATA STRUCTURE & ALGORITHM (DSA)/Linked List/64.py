@@ -1,4 +1,4 @@
-# Insert at an specific position
+# Append, Traversal, Insert at an specific position and Delete a Node
 class Node:
     def __init__(self,val):
         self.val=val
@@ -46,31 +46,6 @@ class LinkedList:
                 count+=1
             prev_node.next=new_node
             new_node.next=current_node
-
-    # Delete 
-    # def Delete(self,val):
-    #     temp=self.head
-    #     if temp.next is not None:
-    #         if temp.val==val:
-    #             self.head=temp.next
-    #             return
-    #     else:
-    #         found=False
-    #         prev=None
-            
-    #         while temp is not None:
-    #             if temp.val==val:
-    #                 found=True
-    #                 return found
-    #             prev=temp
-    #             temp=temp.next
-            
-    #         if found==True:
-    #             prev.next=temp.next
-    #             del temp
-    #             return
-    #         else:
-    #             print("Node Not Found")
     
     # DELETE
     def Delete(self, val):
@@ -88,7 +63,6 @@ class LinkedList:
             return
 
         prev = None
-
         while temp is not None:
             if temp.val == val:
                 prev.next = temp.next
@@ -97,7 +71,6 @@ class LinkedList:
 
             prev = temp
             temp = temp.next
-
         print("Node Not Found")
 
 l1=LinkedList()
