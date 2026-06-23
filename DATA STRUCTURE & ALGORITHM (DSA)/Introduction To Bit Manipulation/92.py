@@ -1,20 +1,16 @@
 # Program: Power Set (Print All Subsets)
-
 arr = list(map(int, input("Enter array elements: ").split()))
 
 
 # Brute Force Approach
 
 n = len(arr)
-
 subsets = []
 
 for mask in range(2 ** n):
-
     subset = []
 
     for i in range(n):
-
         if mask & (1 << i):
             subset.append(arr[i])
 
@@ -25,9 +21,7 @@ print("All Subsets:")
 
 for subset in subsets:
     print(subset)
-
 print("Total Subsets:", len(subsets))
-
 print("Time Complexity: O(N * 2^N)")
 print("Space Complexity: O(N * 2^N)")
 
@@ -44,7 +38,6 @@ print("Space Complexity: N/A")
 # Optimal Approach (Backtracking)
 
 result = []
-
 def generate_subset(index, current):
     if index == len(arr):
         result.append(current[:])
@@ -60,9 +53,7 @@ def generate_subset(index, current):
 
 
 generate_subset(0, [])
-
 print("\nOptimal Approach")
-
 print("All Subsets:")
 
 for subset in result:
