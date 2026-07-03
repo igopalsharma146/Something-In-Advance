@@ -47,7 +47,6 @@ result = []
 def solve(start, target, subset):
     # Valid Combination
     if len(subset) == k:
-
         if target == 0:
             result.append(subset.copy())
         return

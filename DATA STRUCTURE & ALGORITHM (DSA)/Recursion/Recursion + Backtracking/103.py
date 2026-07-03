@@ -52,3 +52,9 @@ print(result)
 
 print("Time Complexity: O(4^N × N)")
 print("Space Complexity: O(N)")
+
+    #              ""
+    #       /       |       \
+    #      a        b        c
+    #   / | \    / | \    / | \
+    #  d  e  f  d  e  f  d  e  f
