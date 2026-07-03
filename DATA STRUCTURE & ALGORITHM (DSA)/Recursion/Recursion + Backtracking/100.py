@@ -70,3 +70,20 @@ print(result)
 
 print("Time Complexity: O(2^N)")
 print("Space Complexity: O(N)")
+
+
+# arr = [1,1,2,5,6,7,10]
+
+# Recursion:
+
+# Start
+# │
+# ├── 1
+# │   ├── 1
+# │   │    └── 6 ✅
+# │   ├── 2
+# │   │    └── 5 ✅
+# │   ├── 7 ✅
+# │
+# ├── 2
+# │   └── 6 ✅
