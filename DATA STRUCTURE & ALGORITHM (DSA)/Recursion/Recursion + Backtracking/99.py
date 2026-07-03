@@ -1,5 +1,10 @@
 # Program: Combination Sum - I
 
+# Combination Sum-I
+# ✅ Reuse of same element allowed.
+# ✅ Input me distinct elements hote hain.
+# ✅ Answer me duplicate combinations nahi honi chahiye.
+
 arr = list(map(int, input("Enter array elements: ").split()))
 target = int(input("Enter Target Sum: "))
 

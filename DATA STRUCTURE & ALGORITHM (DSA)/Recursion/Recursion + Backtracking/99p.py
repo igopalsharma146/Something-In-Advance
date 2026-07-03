@@ -18,7 +18,7 @@ def solve(index,total,target,subset):
     subset.pop()
     solve(index+1,sum,target,subset)
 
-nums=[2,3,4,5]
+nums=[2,3,4,1,5,4]
 result=[]
 target=8
 solve(0,0,target,[])
