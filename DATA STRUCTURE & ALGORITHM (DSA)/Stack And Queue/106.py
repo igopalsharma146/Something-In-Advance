@@ -12,6 +12,12 @@
 # what is stack ?
 # A stack is a linear data structure that follows the LIFO (Last In First Out) principle. can store any type of data. It has two main operations: push (to add an element to the top of the stack) and pop (to remove the top element from the stack). Other common operations include peek (to view the top element without removing it) and isEmpty (to check if the stack is empty).
 
+# stack Opertions:
+# 1. Push: Add an element to the top of the stack.
+# 2. Pop: Remove the top element from the stack.
+# 3. size
+# 4. peek
+# 5. isEmpty
 
 
 # Program: Implement Stack Using Array
