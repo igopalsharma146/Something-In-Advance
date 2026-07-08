@@ -1,7 +1,7 @@
 # Program: Implement Stack Using Queue (Using Class)
 from collections import deque
 class Stack:
-    def __iit__(self):
+    def __init__(self):
         self.queue = deque()
 
     # Push Operation
@@ -70,3 +70,33 @@ print("Size : O(1)")
 print("Display : O(N)")
 
 print("\nSpace Complexity : O(N)")
+
+
+
+# Approach Used : One Queue is used.
+
+# Push Operation :
+# Insert the new element.
+# Rotate the queue so that the newly inserted element comes to the front.
+
+# Example:
+
+# Push(10)
+
+# Queue: [10]
+# Push(20)
+
+# Before Rotation:
+# [10,20]
+
+# After Rotation:
+# [20,10]
+# Push(30)
+
+# Before Rotation:
+# [20,10,30]
+
+# After Rotation:
+# [30,20,10]
+
+# Now the front of the queue always represents the top of the stack.
